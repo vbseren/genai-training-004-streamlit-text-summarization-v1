@@ -12,7 +12,7 @@ def generate_response(txt):
     )
 
     text_splitter = CharacterTextSplitter()
-    texts = text_splitter.split_text()
+    texts = text_splitter.split_text(txt)
     docs = [Document(page_content=t) for t in texts]
     chain = load_summarize_chain(
         llm,
