@@ -21,7 +21,7 @@ def generate_response(txt):
     )
     return chain.run(docs)
 
-set.set_page_config(
+st.set_page_config(
     page_title = "Writing Text Summarization"
 )
 
